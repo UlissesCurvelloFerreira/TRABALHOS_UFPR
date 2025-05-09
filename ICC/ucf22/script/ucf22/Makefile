@@ -1,3 +1,5 @@
+# Ulisses Curvello Ferreira
+# GRR: 20223829
 # PROGRAMA
 PROG = resolveEDO
 OBJS = resolveEDO.o edo.o utils.o lu.o

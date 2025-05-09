@@ -48,13 +48,14 @@ int main()
     LIKWID_MARKER_STOP("LU_FATORACAO");
 
     
-    LIKWID_MARKER_START(markerName("RESOLVE_LU", edo_count));                    
+    string_t resolve = markerName("RESOLVE_LU", edo_count);
+    LIKWID_MARKER_START(resolve);              
     resolveL(sl, y);              
     resolveU(sl, y, x);
-    LIKWID_MARKER_STOP(markerName("RESOLVE_LU", edo_count));              
+    LIKWID_MARKER_STOP(resolve);       
     
     rtime_t elapsed_time = timestamp() - start_time;
-
+    free(resolve);
 
     imprimeSolucao(x, edo.n);
     printf(" %.8e\n\n", elapsed_time);   // Imprime tempo gasto
