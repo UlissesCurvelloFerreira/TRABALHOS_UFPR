@@ -1,6 +1,7 @@
 {
   "files.associations": {
-    "utils.h": "c"
+    "utils.h": "c",
+    "stdlib.h": "c"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

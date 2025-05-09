@@ -1,3 +1,6 @@
+// Ulisses Curvello Ferreira
+// GRR: 20223829
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -72,7 +75,7 @@ void prnEDOsl (EDo *edoeq)
     else if (i == n-1)
       b -= edoeq->yb * (1 + h*edoeq->p/2.0);
 
-    printf (" | ");
+    //printf (" | ");
     printf (FORMAT, b);
       
     printf ("\n");

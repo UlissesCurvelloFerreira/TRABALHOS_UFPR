@@ -1,3 +1,5 @@
+# Ulisses Curvello Ferreira
+# GRR: 20223829
 #!/bin/bash
 
 # Verifica se o binário existe

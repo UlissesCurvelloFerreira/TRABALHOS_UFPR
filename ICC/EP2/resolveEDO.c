@@ -5,10 +5,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <fenv.h>
-
-
 #include <likwid.h>
-
 
 #include "utils.h"
 #include "edo.h"

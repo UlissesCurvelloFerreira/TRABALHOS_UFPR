@@ -1,0 +1,23 @@
+Ulisses Curvello Ferreira.
+GRR: 20223829
+
+
+#Funções
+
+- fatoraLU(Tridiag *sl):  
+  Realiza a fatoração LU do sistema linear tridiagonal, decompondo a matriz em duas matrizes triangulares (L e U). 
+  Aproveita a estrutura tridiagonal para guardar os coeficientes diretamente nos vetores da estrutura Tridiag, 
+  otimizando memória e desempenho.
+
+- resolveL(Tridiag *sl, real_t *y) 
+  Resolve o sistema intermediário Ly = b usando substituição direta. 
+  A matriz L é triangular inferior, e seus multiplicadores estão armazenados na diagonal inferior da estrutura Tridiag.
+
+- resolveU(Tridiag *sl, real_t *y, real_t *x)
+  Resolve o sistema Ux = y utilizando substituição reversa, pois U é uma matriz triangular superior. 
+  Calcula o vetor solução `x` usando os valores da diagonal principal e superior da estrutura `Tridiag`.
+
+- imprimeSolucao(real_t *x, int n)  
+  Imprime o vetor solução `x`, permitindo fácil visualização e análise dos resultados.
+
+Bom, acredito que o programa funcina normalmente não consegui detectar nnenhum erro de cancelamento subtrativo ou outro do gênero.

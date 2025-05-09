@@ -1,3 +1,6 @@
+// Ulisses Curvello Ferreira
+// GRR: 20223829
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>

@@ -1,3 +1,6 @@
+// Ulisses Curvello Ferreira
+// GRR: 20223829
+
 #ifndef __EQDIFF_H__
 #define __EQDIFF_H__
 
