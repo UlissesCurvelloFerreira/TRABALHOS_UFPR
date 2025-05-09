@@ -1,6 +1,7 @@
+#!/bin/bash
+
 # Ulisses Curvello Ferreira
 # GRR: 20223829
-#!/bin/bash
 
 # Verifica se o binário existe
 if [ ! -f ./resolveEDO ]; then
@@ -16,7 +17,9 @@ fi
 
 ENTRADA="$1"
 
-# Executa o programa com LIKWID, extrai apenas os valores desejados
+./resolveEDO < "$ENTRADA"
+
+
 likwid-perfctr -C 0 -g FLOPS_DP -m ./resolveEDO < "$ENTRADA" | \
     awk -F'|' '/FP_ARITH_INST_RETIRED_SCALAR_DOUBLE/ {
         gsub(/ /, "", $2);  # remove espaços no nome

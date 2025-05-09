@@ -20,4 +20,5 @@ Calcula o vetor solução `x` usando os valores da diagonal principal e superior
 - imprimeSolucao(real_t *x, int n)  
 Imprime o vetor solução `x`, permitindo fácil visualização e análise dos resultados.
 
-Bom, acredito que o programa funcina normalmente não consegui detectar nnenhum erro de cancelamento subtrativo ou outro do gênero.
+Bom, acredito que o programa funcina normalmente não consegui detectar nenhum erro de cancelamento subtrativo ou outro do gênero.
+OBS: foi comentado o " | " na função do professor, pois só assim o script de verificação funciona.
